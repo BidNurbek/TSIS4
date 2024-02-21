@@ -1,9 +1,7 @@
-a = int(input())
-b = int(input())
-
-def squares(start, stop):
-    for i in range(start, stop + 1):
+def squares(a, b):
+    for i in range(a, b + 1):
         yield i * i
+a, b = map(int, input().split())
 
 c = squares(a, b)
 for i in c:
