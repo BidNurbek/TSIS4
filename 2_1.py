@@ -1,6 +1,8 @@
-from math import sqrt
-n = int(input())
-a = (i * i for i in range(n + 1))
-for i in a:
-    print(i)
+def squares(a, b):
+    for i in range(a, b + 1):
+        yield i * i
+a, b = map(int, input().split())
 
+c = squares(a, b)
+for i in c:
+    print(i)
