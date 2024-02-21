@@ -1,4 +1,9 @@
+def generator(n):
+    for i in range(n):
+        if i % 2 == 0:
+            yield i
+
 n = int(input())
-a = (i for i in range(0, n + 1) if i % 2 == 0)
-for i in a:
-    print(i)
+x = generator(n)
+for i in x:
+    print(i, end = ', ')
